@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="430.0" style="-fx-background-color: #58d68d;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="chat01.ServerController">
+   <children>
+      <Label fx:id="portLabel" layoutX="23.0" layoutY="33.0" text="Enter Server Port：" />
+      <TextField fx:id="portInput" layoutX="165.0" layoutY="27.0" prefHeight="40.0" prefWidth="205.0" promptText="Server Port number" />
+      <Button fx:id="serverStartButton" layoutX="51.0" layoutY="80.0" mnemonicParsing="false" onAction="#startServer" prefHeight="40.0" prefWidth="120.0" text="Start Server" />
+      <Button fx:id="serverStopButton" layoutX="250.0" layoutY="80.0" mnemonicParsing="false" onAction="#stopServer" prefHeight="40.0" prefWidth="120.0" text="Stop Server" />
+      <TextArea fx:id="serverDisplayText" layoutX="20.0" layoutY="176.0" prefHeight="212.0" prefWidth="392.0" />
+      <Label fx:id="feedback" layoutX="51.0" layoutY="129.0" prefHeight="40.0" prefWidth="322.0" textFill="#c32a2a">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></Label>
+   </children>
+</Pane>

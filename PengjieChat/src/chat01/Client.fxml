@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane fx:id="frameWindowPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="398.0" prefWidth="547.0" style="-fx-background-color: #d2b4de;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="chat01.ClientController">
+   <children>
+      <TextArea fx:id="messageDisplay" layoutX="14.0" layoutY="74.0" prefHeight="234.0" prefWidth="381.0" />
+      <TextField fx:id="messageText" layoutX="14.0" layoutY="318.0" onKeyPressed="#setSendMessagekeyEnterLister" prefHeight="39.0" prefWidth="381.0" promptText="Input Message To Send" />
+      <Button fx:id="sendMessageButton" layoutX="422.0" layoutY="318.0" mnemonicParsing="false" onAction="#setSendMessageButtonAction" prefHeight="39.0" prefWidth="90.0" style="-fx-background-color: #808b96;" text="Send" />
+      <Label fx:id="welcomInfo" layoutX="14.0" layoutY="22.0" prefHeight="39.0" prefWidth="381.0" textFill="#c32a2a">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="privateChatButton" layoutX="338.0" layoutY="23.0" mnemonicParsing="false" onAction="#checkOnlineClientsButtonPressed" prefHeight="46.0" prefWidth="204.0" text="Check Online Clients" />
+      <ListView fx:id="clientListView" layoutX="399.0" layoutY="73.0" prefHeight="240.0" prefWidth="143.0" />
+   </children>
+</Pane>
